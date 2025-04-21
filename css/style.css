@@ -1,0 +1,475 @@
+/* Reset Css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Body Layout */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
+/* Button Css */
+.btn_style1 {
+  display: inline-block;
+  background-color: white;
+  border-radius: 50px;
+  padding: 17px 50px;
+  text-transform: capitalize;
+  border: none;
+  text-decoration: none;
+  color: #ff3500;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.btn_style1:hover {
+  background-color: #ff3500;
+  color: white;
+}
+
+.btn_style2 {
+  display: inline-block;
+  background-color: #ff3500;
+  color: white;
+  border-radius: 50px;
+  border: 2px solid #ff3500;
+  padding: 17px 50px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 500;
+}
+.btn_style2:hover {
+  background-color: transparent;
+  color: #ff3500;
+}
+/* Css any Pagarap on page */
+.content {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #909092;
+}
+
+/* Header CSS */
+h1 {
+  color: #fff;
+  font-size: 78px;
+  font-weight: 200;
+  margin-bottom: 4px;
+  line-height: 85px;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 60px;
+  color: #191d34;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #2e2e2e;
+  text-transform: capitalize;
+  margin-bottom: 36px;
+  text-transform: capitalize;
+}
+
+header {
+  color: white;
+}
+
+header .top_menu {
+  background-color: black;
+  padding: 15px 0;
+}
+
+header .top_menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  line-height: 0;
+}
+
+header .top_menu .top_menu_right {
+  /* Ep sang ben phải */
+  float: right;
+  text-align: center;
+}
+
+header .top_menu .top_menu_right a {
+  margin-left: 30px;
+}
+
+header .top_menu .top_menu_left {
+  /* bài học xương máu- nếu có float 1 bên để tách giao diện thì bên còn lại cũng phải có float để cân bằng lại chiều cao của 2 bên, giao diện sẽ không bị xệ 1 bên */
+  float: left;
+  font-size: 16px;
+}
+
+header .top_menu .top_menu_left span {
+  margin-left: 58px;
+}
+
+header .bot_menu {
+  padding: 40px 0;
+}
+
+header .bot_menu ul {
+  list-style: none;
+}
+
+header .bot_menu ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #102955;
+  font-weight: bolder;
+}
+
+header .bot_menu ul li a:hover {
+  color: #eb592d;
+  transition: all 0.05s;
+}
+
+header .bot_menu ul li #home {
+  color: #eb592d;
+}
+
+header .bot_menu ul li {
+  display: inline-block;
+  margin-right: 44px;
+}
+
+header .bot_menu .menu {
+  float: right;
+}
+/* Carousel Css */
+
+.carousel .carousel_right {
+  position: relative;
+  float: right;
+  width: 70%;
+}
+.carousel .carousel_left {
+  float: left;
+  width: 30%;
+  margin-top: 100px;
+}
+
+.carousel .carousel_right img {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+}
+
+.carousel {
+  background-image: url(../img/banner.png);
+  background-size: cover;
+  height: 600px;
+  background-position: bottom;
+}
+
+.carousel p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 32px;
+  margin: 12px 0 50px;
+}
+
+.carousel h1 span {
+  font-weight: bold;
+}
+
+.service {
+  margin: 90px 0 90px;
+  text-align: center;
+}
+.service .service_title {
+  text-align: center;
+  margin-bottom: 110px;
+}
+
+.service .service_item {
+  padding: 10px 10px;
+}
+
+.service .service_bg {
+  padding: 70px 25px 65px 25px;
+  border: 1px solid #ffc5c2;
+  border-radius: 10px;
+}
+
+.service .service_img {
+  background-image: url(../img/service_icon_bg_1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 140px;
+  width: 160px;
+  padding: 35px;
+  margin: auto;
+}
+
+.service .service_item {
+  float: left;
+  width: calc(100% / 3);
+}
+
+.service .service_item h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 43px;
+  margin-bottom: 22px;
+}
+
+/* Intro CSS */
+
+.intro {
+  padding: 70px 0 24px 0;
+}
+.intro .intro_img,
+.intro .intro_content {
+  float: left;
+}
+
+.intro .intro_img {
+  width: 40%;
+}
+
+.intro .intro_img img {
+  width: 100%;
+}
+
+.intro .intro_content {
+  width: 60%;
+  padding: 100px 70px 130px 150px;
+}
+
+.intro .intro_content p {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.intro .intro_content span {
+  font-weight: bold;
+}
+
+/* News CSS */
+.news {
+  padding: 90px 0 90px;
+}
+.news .news_item {
+  float: left;
+  width: calc(100% / 3);
+  padding: 0 15px;
+  position: relative;
+}
+
+.news .news_title {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 90px;
+}
+.news .news_img img {
+  width: 100%;
+}
+
+.news .news_name {
+  width: 50%;
+  padding: 13px 43px;
+  background-color: white;
+  margin: auto;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.news .news_name_container {
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+.news .news_name p {
+  color: #7a7b7c;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.news .news_name h3 {
+  margin-bottom: 0;
+  font-weight: 700;
+  color: #222;
+  font-size: 18px;
+}
+
+/* Number Css */
+.number {
+  padding: 90px 0 20px;
+}
+
+.number .number_content p {
+  margin: 33px 0 50px;
+}
+
+.number .number_content,
+.number .number_pet {
+  float: left;
+  width: 50%;
+}
+
+.number .number_pet_left,
+.number .number_pet_right {
+  float: left;
+  width: 50%;
+}
+
+.number .pet_bg {
+  border-radius: 14px;
+  background: #fff;
+  padding: 40px 40px 33px 40px;
+  border: 1px solid rgb(0, 0, 2, 0.08);
+  text-align: center;
+}
+
+.number .pet_bg h3 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #383737;
+  margin-bottom: 2px;
+  margin-top: 22px;
+  line-height: 1;
+}
+
+.number .pet_bg p {
+  font-size: 20px;
+  color: gray;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 0;
+}
+
+.number .number_pet_right .pet_content {
+  padding: 20px 15px;
+}
+
+.number .number_pet_left .pet_content {
+  padding: 150px 35px;
+}
+
+.number .number_content {
+  padding: 100px 30px;
+}
+
+/* CTA CSS */
+.CTA {
+  background-image: url(../img/contact_bg.png);
+  background-size: 100%;
+  padding-top: 160px;
+  padding-bottom: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.CTA .CTA_content {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.CTA .CTA_content h2 {
+  color: white;
+}
+
+.CTA .CTA_content p {
+  font-size: 25px;
+  color: #fff;
+  line-height: 40px;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+.CTA .CTA_contact #tel,
+.CTA .CTA_contact span {
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+.CTA .CTA_contact span {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: normal;
+}
+
+/* Footer Css */
+footer .footer_content {
+  padding-top: 130px;
+  padding-bottom: 110px;
+}
+
+footer .footer_item {
+  float: left;
+  width: calc(100% / 4);
+}
+footer .footer_item ul {
+  list-style: none;
+}
+
+footer .footer_item ul li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+footer .footer_item ul li a {
+  text-decoration: none;
+  color: #7a7a7a;
+}
+
+footer .footer_item ul li #tele {
+  color: #eb592d;
+}
+
+footer .footer_item ul li a:hover {
+  color: #eb592d;
+}
+
+footer .footer_social {
+  margin-top: 26px;
+}
+
+footer .footer_social a {
+  color: #7a7a7a;
+  font-size: 16px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+footer .footer_item p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #7a7a7a;
+  margin-top: 35px;
+}
+
+footer #copyright {
+  font-size: 18px;
+  color: #888;
+}
+
+footer .footer_bot {
+  padding-bottom: 32px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 30px;
+}
