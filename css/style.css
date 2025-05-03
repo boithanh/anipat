@@ -639,6 +639,22 @@ footer .footer_bot {
     }
   }
 
+  .number {
+
+    .number_pet_left,
+    .number_pet_right {
+      .pet_content {
+        padding: 0;
+
+        .pet_bg {
+          img {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+
   footer {
     .footer_content {
       padding: 0;
