@@ -1,52 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CyberAnipat</title>
-    <!-- FontAwesome 6.2.0 CSS -->
-    <link
-      rel="stylesheet"
-      data-purpose="Layout StyleSheet"
-      title="Web Awesome"
-      href="/css/app-wa-a60ddbceb7292f11c9e430d067b1eb9f.css?vsn=d"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberAnipat</title>
+  <!-- FontAwesome 6.2.0 CSS -->
+  <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+    href="/css/app-wa-a60ddbceb7292f11c9e430d067b1eb9f.css?vsn=d" />
 
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
-    />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
-    />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
-    />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="top_menu">
-        <div class="container">
-          <div class="top_menu_left">
-            <a href="tel:+84786010285">+880 4664 216</a>
-            <span> Mon - Sat 10:00 - 7:00</span>
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css" />
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="top_menu">
+      <div class="container">
+        <div class="top_menu_left">
+          <a href="tel:+84786010285">+880 4664 216</a>
+          <span> Mon - Sat 10:00 - 7:00</span>
+        </div>
+        <div class="top_menu_right">
+          <a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-pinterest-p"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-google-plus-g"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="bot_menu container">
+      <a href="#">
+        <img src="./img/logo.png" alt="logo_imge" />
+      </a>
+      <nav class="menu">
+        <ul>
+          <li><a href="#" id="home">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">pages</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+      <div class="clear"></div>
+    </div>
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="#" style="background-color: white;">
+        <img src="./img/logo.png" alt="logo_imge" />
+      </a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+  <section class="carousel">
+    <div class="container">
+      <div class="carousel_left">
+        <h1>We care <br /><span>your pets</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut,
+          recusandae blanditiis.
+        </p>
+        <a href="#" class="btn_style1">contact us</a>
+      </div>
+      <div class="carousel_right">
+        <img src="./img/dog.png" alt="dog" />
+      </div>
+      <div class="clear"></div>
+    </div>
+  </section>
+  <section class="service">
+    <div class="container">
+      <div class="service_title">
+        <h2>Services for every dog</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
+          culpa maiores nemo, ea quae est mollitia odit delectus?
+        </p>
+      </div>
+      <div class="service_content">
+        <div class="service_item">
+          <div class="service_bg">
+            <div class="service_img">
+              <img src="./img/service_icon_1.png" alt="dog1" />
+            </div>
+            <h3>Pet Boarding</h3>
+            <p class="content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium exercitationem nesciunt incidunt reiciendis neque.
+            </p>
           </div>
-          <div class="top_menu_right">
+        </div>
+        <div class="service_item">
+          <div class="service_bg">
+            <div class="service_img">
+              <img src="./img/service_icon_2.png" alt="dog1" />
+            </div>
+            <h3>Healthy Meals</h3>
+            <p class="content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium exercitationem nesciunt incidunt reiciendis neque.
+            </p>
+          </div>
+        </div>
+        <div class="service_item">
+          <div class="service_bg">
+            <div class="service_img">
+              <img src="./img/service_icon_3.png" alt="dog1" />
+            </div>
+            <h3>Pet Spa</h3>
+            <p class="content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium exercitationem nesciunt incidunt reiciendis neque.
+            </p>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </section>
+  <section class="intro">
+    <div class="container">
+      <div class="intro_img">
+        <img src="./img/pet_care.png" alt="cat" />
+      </div>
+      <div class="intro_content">
+        <h2>
+          We care your pet <br />
+          <span> As you care</span>
+        </h2>
+        <p class="content">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+          delectus labore, animi architecto recusandae optio voluptatem saepe
+          voluptates aperiam magni dolorum, ratione sapiente repudiandae eum
+          sequi consectetur, sint nisi magnam ipsa nam molestias placeat!
+        </p>
+        <a href="#" class="btn_style2">about us</a>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </section>
+  <section class="number">
+    <div class="container">
+      <div class="number_content">
+        <h2>We care your pet <br /><span>As you care</span></h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+          quaerat ratione suscipit officiis minima maiores pariatur temporibus
+          ducimus laborum itaque cum, nihil corrupti molestias, necessitatibus
+          sequi voluptatum asperiores quos sunt?
+        </p>
+        <a href="#" class="btn_style2">contact us</a>
+      </div>
+      <div class="number_pet">
+        <div class="number_pet_left">
+          <div class="pet_content">
+            <div class="pet_bg">
+              <img src="./img/1.png" alt="dog" />
+              <h3>452</h3>
+              <p>Pets Available</p>
+            </div>
+          </div>
+        </div>
+        <div class="number_pet_right">
+          <div class="pet_content">
+            <div class="pet_bg">
+              <img src="./img/2.png" alt="dog" />
+              <h3>158</h3>
+              <p>Pets Available</p>
+            </div>
+          </div>
+          <div class="pet_content">
+            <div class="pet_bg">
+              <img src="./img/3.png" alt="3" />
+              <h3>365</h3>
+              <p>Pets Available</p>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </section>
+
+  <section class="news">
+    <div class="container">
+      <div class="news_title">
+        <h2>Our Team</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ea
+          voluptate!Expedita, magnam eos qui numquam nobis molestias illo
+          maxime?
+        </p>
+      </div>
+      <div class="news_content">
+        <div class="news_item">
+          <div class="news_img">
+            <img src="./img/team1.png" alt="team1" />
+          </div>
+          <div class="news_name_container">
+            <div class="news_name">
+              <h3>Rala Emaia</h3>
+              <p>Senior Director</p>
+            </div>
+          </div>
+        </div>
+        <div class="news_item">
+          <div class="news_img">
+            <img src="./img/team2.png" alt="team2" />
+          </div>
+          <div class="news_name_container">
+            <div class="news_name">
+              <h3>jhon Smith</h3>
+              <p>Senior Director</p>
+            </div>
+          </div>
+        </div>
+        <div class="news_item">
+          <div class="news_img">
+            <img src="./img/team3.png" alt="team3" />
+          </div>
+          <div class="news_name_container">
+            <div class="news_name">
+              <h3>Rala Emaia</h3>
+              <p>Senior Director</p>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </section>
+  <section class="CTA">
+    <div class="CTA_content container">
+      <h2>Why go with Anipat?</h2>
+      <p>
+        Because we know that even the best technology is only as good as the
+        people behind it. 24/7 tech support.
+      </p>
+      <div class="CTA_contact">
+        <a href="#" class="btn_style1">contact us</a>
+        <span> Or</span>
+        <a href="tel:0786010285" id="tel">+ 880 4664 216</a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="footer_content">
+        <div class="footer_item">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><a href="tel:0786010285" id="tele">+555 0000 565</a></li>
+            <li>
+              <a href="mailto:Demomail@gmail.Com">Demomail@gmail.Com</a>
+            </li>
+            <li><a href="#">700, Green Lane, New York, USA</a></li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <h3>Our Servces</h3>
+          <ul>
+            <li><a href="#">Pet Insurance</a></li>
+            <li><a href="#">Pet surgeries</a></li>
+            <li><a href="#">Pet Adoption</a></li>
+            <li><a href="#">Dog Insurance</a></li>
+            <li><a href="#">Cat Insurance</a></li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <h3>Quick Link</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Login info</a></li>
+            <li><a href="#">Knowledge Base</a></li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <img src="./img/logo.png" alt="logo" />
+          <p>239 E 5th St, New York NY 10003, USA</p>
+          <div class="footer_social">
             <a href="#">
               <i class="fa-brands fa-facebook-f"></i>
             </a>
@@ -60,276 +322,24 @@
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
           </div>
-          <div class="clear"></div>
-        </div>
-      </div>
-      <div class="bot_menu container">
-        <a href="#">
-          <img src="./img/logo.png" alt="logo_imge" />
-        </a>
-        <nav class="menu">
-          <ul>
-            <li><a href="#" id="home">home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">blog</a></li>
-            <li><a href="#">pages</a></li>
-            <li><a href="#">services</a></li>
-            <li><a href="#">contact</a></li>
-          </ul>
-        </nav>
-        <div class="clear"></div>
-      </div>
-    </header>
-    <section class="carousel">
-      <div class="container">
-        <div class="carousel_left">
-          <h1>We care <br /><span>your pets</span></h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut,
-            recusandae blanditiis.
-          </p>
-          <a href="#" class="btn_style1">contact us</a>
-        </div>
-        <div class="carousel_right">
-          <img src="./img/dog.png" alt="dog" />
         </div>
         <div class="clear"></div>
       </div>
-    </section>
-    <section class="service">
-      <div class="container">
-        <div class="service_title">
-          <h2>Services for every dog</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
-            culpa maiores nemo, ea quae est mollitia odit delectus?
-          </p>
-        </div>
-        <div class="service_content">
-          <div class="service_item">
-            <div class="service_bg">
-              <div class="service_img">
-                <img src="./img/service_icon_1.png" alt="dog1" />
-              </div>
-              <h3>Pet Boarding</h3>
-              <p class="content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusantium exercitationem nesciunt incidunt reiciendis neque.
-              </p>
-            </div>
-          </div>
-          <div class="service_item">
-            <div class="service_bg">
-              <div class="service_img">
-                <img src="./img/service_icon_2.png" alt="dog1" />
-              </div>
-              <h3>Healthy Meals</h3>
-              <p class="content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusantium exercitationem nesciunt incidunt reiciendis neque.
-              </p>
-            </div>
-          </div>
-          <div class="service_item">
-            <div class="service_bg">
-              <div class="service_img">
-                <img src="./img/service_icon_3.png" alt="dog1" />
-              </div>
-              <h3>Pet Spa</h3>
-              <p class="content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusantium exercitationem nesciunt incidunt reiciendis neque.
-              </p>
-            </div>
-          </div>
-          <div class="clear"></div>
-        </div>
+      <div class="footer_bot">
+        <p id="copyright">Copyright ©2022 All rights reserved</p>
       </div>
-    </section>
-    <section class="intro">
-      <div class="container">
-        <div class="intro_img">
-          <img src="./img/pet_care.png" alt="cat" />
-        </div>
-        <div class="intro_content">
-          <h2>
-            We care your pet <br />
-            <span> As you care</span>
-          </h2>
-          <p class="content">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
-            delectus labore, animi architecto recusandae optio voluptatem saepe
-            voluptates aperiam magni dolorum, ratione sapiente repudiandae eum
-            sequi consectetur, sint nisi magnam ipsa nam molestias placeat!
-          </p>
-          <a href="#" class="btn_style2">about us</a>
-        </div>
-        <div class="clear"></div>
-      </div>
-    </section>
-    <section class="number">
-      <div class="container">
-        <div class="number_content">
-          <h2>We care your pet <br /><span>As you care</span></h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-            quaerat ratione suscipit officiis minima maiores pariatur temporibus
-            ducimus laborum itaque cum, nihil corrupti molestias, necessitatibus
-            sequi voluptatum asperiores quos sunt?
-          </p>
-          <a href="#" class="btn_style2">contact us</a>
-        </div>
-        <div class="number_pet">
-          <div class="number_pet_left">
-            <div class="pet_content">
-              <div class="pet_bg">
-                <img src="./img/1.png" alt="dog" />
-                <h3>452</h3>
-                <p>Pets Available</p>
-              </div>
-            </div>
-          </div>
-          <div class="number_pet_right">
-            <div class="pet_content">
-              <div class="pet_bg">
-                <img src="./img/2.png" alt="dog" />
-                <h3>158</h3>
-                <p>Pets Available</p>
-              </div>
-            </div>
-            <div class="pet_content">
-              <div class="pet_bg">
-                <img src="./img/3.png" alt="3" />
-                <h3>365</h3>
-                <p>Pets Available</p>
-              </div>
-            </div>
-          </div>
-          <div class="clear"></div>
-        </div>
-        <div class="clear"></div>
-      </div>
-    </section>
+    </div>
+  </footer>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+</body>
 
-    <section class="news">
-      <div class="container">
-        <div class="news_title">
-          <h2>Our Team</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ea
-            voluptate!Expedita, magnam eos qui numquam nobis molestias illo
-            maxime?
-          </p>
-        </div>
-        <div class="news_content">
-          <div class="news_item">
-            <div class="news_img">
-              <img src="./img/team1.png" alt="team1" />
-            </div>
-            <div class="news_name_container">
-              <div class="news_name">
-                <h3>Rala Emaia</h3>
-                <p>Senior Director</p>
-              </div>
-            </div>
-          </div>
-          <div class="news_item">
-            <div class="news_img">
-              <img src="./img/team2.png" alt="team2" />
-            </div>
-            <div class="news_name_container">
-              <div class="news_name">
-                <h3>jhon Smith</h3>
-                <p>Senior Director</p>
-              </div>
-            </div>
-          </div>
-          <div class="news_item">
-            <div class="news_img">
-              <img src="./img/team3.png" alt="team3" />
-            </div>
-            <div class="news_name_container">
-              <div class="news_name">
-                <h3>Rala Emaia</h3>
-                <p>Senior Director</p>
-              </div>
-            </div>
-          </div>
-          <div class="clear"></div>
-        </div>
-      </div>
-    </section>
-    <section class="CTA">
-      <div class="CTA_content container">
-        <h2>Why go with Anipat?</h2>
-        <p>
-          Because we know that even the best technology is only as good as the
-          people behind it. 24/7 tech support.
-        </p>
-        <div class="CTA_contact">
-          <a href="#" class="btn_style1">contact us</a>
-          <span> Or</span>
-          <a href="tel:0786010285" id="tel">+ 880 4664 216</a>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="footer_content">
-          <div class="footer_item">
-            <h3>Contact Us</h3>
-            <ul>
-              <li><a href="tel:0786010285" id="tele">+555 0000 565</a></li>
-              <li>
-                <a href="mailto:Demomail@gmail.Com">Demomail@gmail.Com</a>
-              </li>
-              <li><a href="#">700, Green Lane, New York, USA</a></li>
-            </ul>
-          </div>
-          <div class="footer_item">
-            <h3>Our Servces</h3>
-            <ul>
-              <li><a href="#">Pet Insurance</a></li>
-              <li><a href="#">Pet surgeries</a></li>
-              <li><a href="#">Pet Adoption</a></li>
-              <li><a href="#">Dog Insurance</a></li>
-              <li><a href="#">Cat Insurance</a></li>
-            </ul>
-          </div>
-          <div class="footer_item">
-            <h3>Quick Link</h3>
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-              <li><a href="#">Login info</a></li>
-              <li><a href="#">Knowledge Base</a></li>
-            </ul>
-          </div>
-          <div class="footer_item">
-            <img src="./img/logo.png" alt="logo" />
-            <p>239 E 5th St, New York NY 10003, USA</p>
-            <div class="footer_social">
-              <a href="#">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-              <a href="#">
-                <i class="fa-brands fa-pinterest-p"></i>
-              </a>
-              <a href="#">
-                <i class="fa-brands fa-google-plus-g"></i>
-              </a>
-              <a href="#">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-            </div>
-          </div>
-          <div class="clear"></div>
-        </div>
-        <div class="footer_bot">
-          <p id="copyright">Copyright ©2022 All rights reserved</p>
-        </div>
-      </div>
-    </footer>
-  </body>
 </html>

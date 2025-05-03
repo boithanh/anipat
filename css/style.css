@@ -10,10 +10,57 @@
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .clear {
   clear: both;
+}
+
+.topnav {
+  display: none;
+}
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: orangered;
+  color: white;
 }
 
 /* Button Css */
@@ -47,10 +94,12 @@
   text-decoration: none;
   font-weight: 500;
 }
+
 .btn_style2:hover {
   background-color: transparent;
   color: #ff3500;
 }
+
 /* Css any Pagarap on page */
 .content {
   font-size: 18px;
@@ -62,7 +111,7 @@
 /* Header CSS */
 h1 {
   color: #fff;
-  font-size: 78px;
+  font-size: 4.875rem;
   font-weight: 200;
   margin-bottom: 4px;
   line-height: 85px;
@@ -70,14 +119,14 @@ h1 {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: 300;
   line-height: 60px;
   color: #191d34;
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 1.563rem;
   font-weight: 500;
   color: #2e2e2e;
   text-transform: capitalize;
@@ -153,6 +202,7 @@ header .bot_menu ul li {
 header .bot_menu .menu {
   float: right;
 }
+
 /* Carousel Css */
 
 .carousel .carousel_right {
@@ -160,10 +210,16 @@ header .bot_menu .menu {
   float: right;
   width: 70%;
 }
+
+.carousel .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .carousel .carousel_left {
   float: left;
   width: 30%;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 
 .carousel .carousel_right img {
@@ -195,6 +251,7 @@ header .bot_menu .menu {
   margin: 90px 0 90px;
   text-align: center;
 }
+
 .service .service_title {
   text-align: center;
   margin-bottom: 110px;
@@ -237,6 +294,7 @@ header .bot_menu .menu {
 .intro {
   padding: 70px 0 24px 0;
 }
+
 .intro .intro_img,
 .intro .intro_content {
   float: left;
@@ -268,10 +326,10 @@ header .bot_menu .menu {
 .news {
   padding: 90px 0 90px;
 }
+
 .news .news_item {
   float: left;
   width: calc(100% / 3);
-  padding: 0 15px;
   position: relative;
 }
 
@@ -281,6 +339,7 @@ header .bot_menu .menu {
   margin: auto;
   margin-bottom: 90px;
 }
+
 .news .news_img img {
   width: 100%;
 }
@@ -300,6 +359,7 @@ header .bot_menu .menu {
   bottom: -20px;
   left: 0;
 }
+
 .news .news_name p {
   color: #7a7b7c;
   font-size: 14px;
@@ -421,7 +481,9 @@ footer .footer_content {
 footer .footer_item {
   float: left;
   width: calc(100% / 4);
+  margin-bottom: 20px;
 }
+
 footer .footer_item ul {
   list-style: none;
 }
@@ -472,4 +534,127 @@ footer .footer_bot {
   padding-bottom: 32px;
   border-top: 1px solid #e0e0e0;
   padding-top: 30px;
+}
+
+@media screen and (max-width:1025px) {
+
+  .carousel .carousel_left,
+  .carousel .carousel_right {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:821px) {
+
+  .carousel .carousel_left,
+  .carousel .carousel_right {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+
+  .carousel {
+    height: 100%;
+  }
+
+  .carousel .carousel_right {
+    img {
+      position: relative;
+      width: 100%;
+    }
+  }
+
+}
+
+@media screen and (max-width:431px) {
+  header {
+
+    .bot_menu,
+    .top_menu {
+      display: none;
+    }
+
+    .topnav {
+      display: block;
+    }
+  }
+
+  .service .service_content .service_item {
+    float: none;
+    width: 100%;
+    display: block;
+  }
+
+  .intro {
+
+    .intro_img,
+    .intro_content {
+      width: 100%;
+      display: block;
+      padding: 10px;
+    }
+  }
+
+  .number {
+
+    .number_content,
+    .number_pet {
+      width: 100%;
+      float: none;
+      display: block;
+    }
+
+    .number_pet .number_pet_left,
+    .number_pet .number_pet_right {
+      width: 100%;
+      float: none;
+      display: block;
+    }
+  }
+
+  .news {
+    .news_title {
+      width: 80%;
+      font-size: 20px;
+    }
+
+    .news_item {
+      float: none;
+      width: 100%;
+      display: block;
+      margin-bottom: 50px;
+
+      /* img {
+        padding: 0 20px;
+      } */
+    }
+  }
+
+  .CTA {
+    background-size: cover;
+    background-position: left;
+
+    .CTA_content {
+      width: 100%;
+    }
+  }
+
+  footer {
+    .footer_content {
+      padding: 0;
+
+      .footer_item {
+        float: none;
+        display: inline-block;
+        width: 45%;
+        padding: 0 20px;
+        text-align: justify;
+
+        h3 {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
 }
