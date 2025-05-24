@@ -19,4 +19,8 @@ if (hasNotch()) {
     // Là thiết bị có notch → dùng padding hoặc set meta phù hợp
     document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]')
         ?.setAttribute('content', 'black-translucent');
+    document.querySelector("#myLinks .icon").style.top = '60px';
+}
+if (!hasNotch()) {
+    document.documentElement.style.setProperty('--safe-top', '0px');
 }
