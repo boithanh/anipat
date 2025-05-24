@@ -1,8 +1,4 @@
 /* Reset Css */
-:root {
-  --safe-top: env(safe-area-inset-top, 0px);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +19,6 @@
 
 .topnav {
   display: none;
-  padding-top: var(--safe-top);
 }
 
 /* Style the navigation menu */
@@ -678,19 +673,4 @@ footer .footer_bot {
     }
   }
 
-}
-
-@media screen and (max-width: 431px) {
-  .topnav {
-    background-color: white;
-    /* padding: 50px 0 0 0; */
-
-    a {
-      background-color: black;
-    }
-
-    /* a.icon {
-      top: 60px;
-    } */
-  }
 }
