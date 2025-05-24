@@ -19,5 +19,6 @@ if (hasNotch()) {
     document.querySelector("#myLinks .icon").style.top = '60px';
 }
 if (!hasNotch()) {
-    document.documentElement.style.setProperty('--safe-top', '0px');
+    document.documentElement.style.setProperty('--safe-top', '50px');
+    document.querySelector(".icon").style.top = '50px';
 }
